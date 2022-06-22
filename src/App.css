@@ -1,38 +1,45 @@
 .App {
   text-align: center;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.LoginApp {
+  width: 30%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  /* width: 100%; */
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
+  margin-top: 1rem;
+  gap: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem 2rem;
+  border-radius: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+form label {
+  align-self: start;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button {
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+form button {
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+  transition: background-color 0.1s;
+}
+form button:hover {
+  background-color: rgb(71, 71, 223);
+}
+form button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
 }
